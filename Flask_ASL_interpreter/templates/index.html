@@ -1,0 +1,75 @@
+
+<html lang="en">
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>ASL streaming</title>
+    <style>
+	img {
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	width: 45%
+	}
+    </style>
+    <style>
+      body {
+            background-color: #2E2F30;
+            background-image: url(robayonevaestebanbg-pattern.png");
+            color: #333;
+            font-family: verdana, arial, helvetica, sans-serif;
+            font-size: 13px;
+            line-height: 18px;
+          }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+
+          Deep Learning
+        </a>
+      </nav>
+    </div>
+    <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-secondary">ENG</button>
+              <button type="button" class="btn btn-secondary">FR</button>
+              <button type="button" class="btn btn-secondary">ESP</button>
+            </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <div class="card text-center">
+            <div class="card-header">
+              <h3>ASL Prediction Streaming</h3>
+
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">To make the prediction, please place your hand inside the square.</p>
+              <img id="bg" class="center" src="{{ url_for('video_feed') }}">
+            </div>
+            <div class="card-footer text-muted">
+              IA School
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+  </body>
+</html>
